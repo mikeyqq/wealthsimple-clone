@@ -9,9 +9,10 @@ function App() {
     getStories().then(data =>
       setTimeout(() => {
         setStories(data);
+        console.log(data);
       }, 2000)
     );
-  });
+  }, []);
 
   return (
     <div className="App">

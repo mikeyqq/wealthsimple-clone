@@ -7,8 +7,8 @@ const StoriesList = () => {
 
   useEffect(() => {
     getStoriesId().then(data => setStories(data));
-  });
+  }, []);
 
-  return newStories.map(storyIds => <StoriesListItem key={storyIds} storyId={storyIds} />);
+  return newStories.map(storyId => <StoriesListItem key={storyId} storyId={storyId} />);
 };
 export default StoriesList;

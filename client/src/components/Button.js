@@ -18,11 +18,7 @@ const Button = () => {
     }
   `;
 
-  return (
-    <div>
-      <Button>Start Investing</Button>
-    </div>
-  );
+  return <Button>Start Investing</Button>;
 };
 
 export default Button;

@@ -20,7 +20,7 @@ const StoriesList = () => {
     }
   };
 
-  const Storiessection = styled.div`
+  const Storiessection = styled.body`
     @media ${device.mobileL} {
       display: block;
       padding-top: 50px;
@@ -31,7 +31,7 @@ const StoriesList = () => {
     }
   `;
 
-  const Storiestitle = styled.p`
+  const Storiestitle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@ const StoriesList = () => {
   `;
   const H1 = styled.h1`
     font-family: ${Theme.fonts.heading};
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 0px;
     color: #262626;
     @media ${device.mobileL} {

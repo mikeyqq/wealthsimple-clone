@@ -1,5 +1,5 @@
-import React from "react";
-// import { getStoryMeta } from "../services/hackerNewsApi";
+import React, { useEffect } from "react";
+import { getStoryMeta } from "../services/hackerNewsApi";
 import styled from "styled-components";
 import happy from "../../src/assets/images/happy.png";
 
@@ -7,14 +7,9 @@ const StoriesListItemImage = props => {
   //function to set meta data of image url from API end from backend.
   // const [image, setImage] = useState(null);
 
-  // useEffect(() => {
-  //   getStoryMeta(storyUrl).then(data =>
-  //     console.log(
-  //       "ALEX - THIS IS THE AXIOS.GET REQUEST ON THE URL THAT I GOT FROM THE HACKERNEWS API",
-  //       JSON.stringify(data)
-  //     )
-  //   );
-  // });
+  useEffect(() => {
+    getStoryMeta(props.storyUrl).then(data => console.log("Retrieving data with image url back from backend", data));
+  });
 
   const Storiesimage = styled.div`
     display: block;

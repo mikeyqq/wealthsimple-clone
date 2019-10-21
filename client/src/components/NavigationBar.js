@@ -69,6 +69,7 @@ const WealthsimpleLogo = styled.img`
   @media ${device.mobileL} {
     width: 50px;
     height: 45px;
+    padding-left: 40px;
   }
   @media ${device.tablet} {
     display: none;

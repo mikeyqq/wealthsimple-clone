@@ -1,14 +1,12 @@
 import React from "react";
 import StoriesList from "../src/components/StoriesList";
-import "./App.css";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1>Wealthsimple Clone</h1>
-        <StoriesList />
-      </header>
+    <div>
+      <NavigationBar />
+      <StoriesList />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import happy from "../../src/assets/images/happy.png";
 
-const StoriesListItemImage = ({ storyUrl }) => {
+const StoriesListItemImage = props => {
   //function to set meta data of image url from API end from backend.
   // const [image, setImage] = useState(null);
 
@@ -26,7 +26,9 @@ const StoriesListItemImage = ({ storyUrl }) => {
 
   return (
     <Storiesimage>
-      <img src={happy} alt="happy" />
+      <a href={props.storyUrl}>
+        <img src={happy} alt="happy" />
+      </a>
     </Storiesimage>
   );
 };
